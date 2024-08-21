@@ -7,6 +7,9 @@ It is very much a work in progress!
 ## Projects
 
 - [Kookaburra](https://kookaburra.cloud)
+  - A custom apps platform for small businesses.
+- [Filbrun Fabrications' website](https://filbrunfabrication.com/)
+  - My first business website project.
 
 ## Links
 
