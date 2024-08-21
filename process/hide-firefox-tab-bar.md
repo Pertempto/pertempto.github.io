@@ -6,3 +6,5 @@
 ```
 #TabsToolbar { visibility: collapse !important; }
 ```
+6. Go to `about:config`
+7. Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
