@@ -1,3 +1,5 @@
+# Setup Vertical Tabs in Firefox
+
 This is the process for use sidebery for a vertical tab bar, and completely hide the default horizontal tab bar.
 
 1. Install the Sidebery extension
