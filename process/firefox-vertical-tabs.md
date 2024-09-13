@@ -2,7 +2,7 @@
 
 This is the process for use sidebery for a vertical tab bar, and completely hide the default horizontal tab bar.
 
-1. Install the Sidebery extension
+1. Install the [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery) extension
 2. Go to `about:support`
 3. Open the profile directory
 4. Create a `chrome` directory
