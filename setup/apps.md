@@ -22,5 +22,7 @@ The apps that I need for my development workflow.
 - docker
     - Install using the [Ubuntu steps](https://docs.docker.com/engine/install/ubuntu/)
 - [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-- [helix](https://docs.helix-editor.com/package-managers.html#ubuntu)
+- helix
+    - Installed using [these directions](https://docs.helix-editor.com/package-managers.html#ubuntu)
+    - My helix config is [here](./helix-config)
 - [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu)
