@@ -5,7 +5,7 @@ date: 2024-10-05
 
 # Why I Chose Helix
 
-I got all my devices switched over to Pop!_os, and I absolutely love the system-wide launcher along with the window management keyboard shortcuts. Increasingly, I can use the keyboard where I used to use the mouse - resulting in much greater efficiency with how I interact with my computers.
+Recently I got all my devices switched over to Pop!_os, and I absolutely love it. Some of my favorite things are the system-wide launcher and the window management keyboard shortcuts. Increasingly, I can use the keyboard where I used to use the mouse - resulting in much greater efficiency with how I interact with my computers. It has been a **huge** upgrade over Windows 11.
 
 This new passion for running things from a keyboard has made me more and more disatisifed with VS Code and it's mouse-based workflows. Sure, I could optimize my setup to learn more of the built-in keyboard shortcuts and create a few extras where I need them; but do I really want to lock myself into a [Microsoft product](https://ghuntley.com/fracture/) for one of the core parts of my career - editing text files? My answer was no. I would much rather setup my workflows around open source tools with thriving communities.
 
