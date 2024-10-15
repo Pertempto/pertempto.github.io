@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hello World</h1>
+			<p>
+			This is the personal site of Addison Emig.
+			</p>
+			<p>
+			It is very much a work in progress!
+			</p>
+
+			<h2>Projects</h2>
+			<ul>
+  <li><a href="https://kookaburra.cloud">Kookaburra</a>
+    <ul>
+      <li>A custom apps platform for small businesses.</li>
+    </ul>
+  </li>
+  <li><a href="https://filbrunfabrication.com/">Filbrun Fabrications’ website</a>
+    <ul>
+      <li>My first business website project.</li>
+    </ul>
+  </li>
+</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
