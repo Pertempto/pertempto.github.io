@@ -2,7 +2,7 @@
 title: Replacing an iMac Power Supply
 description: 'A few notes from my experience with replacing my iMac power supply'
 pubDate: 'Aug 21, 2024'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-4.jpg'
 ---
 
 Watch this [YouTube tutorial](https://www.youtube.com/watch?v=V2jq5UbIr_g) for background.
