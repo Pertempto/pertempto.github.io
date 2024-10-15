@@ -1,7 +1,7 @@
 ---
 title: POCO X3 NFC LineageOS
 description: A few helpful links for setting up LineageOS on the POCO X3 NFC.
-pubDate: 2024-10-05
+pubDate: 'Oct 05, 2024'
 heroImage: '/blog-placeholder-4.jpg'
 ---
 
