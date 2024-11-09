@@ -1,14 +1,14 @@
 ---
 title: "Tip: Set Up Syncthing"
 description: "How to set up syncthing on a ubuntu-based system for seamless file sync on your local network."
-pubDate: "Oct 30, 2024"
+pubDate: "Nov 9, 2024"
 heroImage: "/syncthing-logo.svg"
 tags: "tips, homelab, linux"
 ---
 
 ## Background
 
-I've heard about Syncthing many times, but I had never found the time to set it up. This week I found myself needing to sync my `todo.txt` file between my laptop and my phone, in order to have access to my to-do list on both devices (more details about that system coming in a future post, hopefully). Syncthing is the perfect tool for the job. It can run on both my Linux and Android devices, and doesn't require any kind of centralized server. The setup takes a few steps, but really it's pretty simple.
+I've heard about Syncthing many times, but I had never found the time to set it up. Recently I found myself needing to sync my `todo.txt` file between my laptop and my phone, in order to have access to my to-do list on both devices (more details about that system coming in a future post, hopefully). Syncthing is the perfect tool for the job. It can run on both my Linux and Android devices, and doesn't require any kind of centralized server. The setup takes a few steps, but really it's pretty simple.
 
 ## Steps
 
@@ -20,12 +20,12 @@ The `syncthing` package available by default on my system was quite outdated, bu
 You can find the full steps [here](https://apt.syncthing.net/), but I'll include the basics here for completeness.
 
 ```sh
-# Add the release PGP keys:
+# Add the release PGP keys
 sudo mkdir -p /etc/apt/keyrings
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
-# Add the "stable" channel to your APT sources:
+# Add the "stable" channel to your APT sources
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-# Update and install syncthing:
+# Update and install syncthing
 sudo apt-get update
 sudo apt-get install syncthing
 ```
@@ -38,11 +38,24 @@ The Syncthing docs include a great [page](https://docs.syncthing.net/users/autos
 
 I followed the steps to set up a `systemd` user service, which I will also include here. If you would like to set up a system-wide `systemd` service, or use some other strategy, please read the documentation. It really is quite easy to follow.
 
-INCLUDE INFO ABOUT USER SERVICE HERE
+```sh
+# Download the service file
+curl -o ~/.config/systemd/user/syncthing.service https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/etc/linux-systemd/user/syncthing.service
+# Enable the service
+systemctl --user enable syncthing.service
+# Start the service
+systemctl --user start syncthing.service
+# Check the status of the service
+systemctl --user status syncthing.service
+```
 
 ### Sync a Folder
 
-INCLUDE INFORMATION ABOUT SYNCING A FOLDER BETWEEN DEVICES
+Once you have Syncthing running, you should be able to access the web interface from a web browser by going to [http://127.0.0.1:8384](http://127.0.0.1:8384).
+
+You must first set up a remote device to share with, using the "Add Remote Device" button.
+
+Once you have a remote device connected, use the "Add Folder" button to set up a folder to share between the devices.
 
 ## Future Possibilities
 
@@ -58,3 +71,6 @@ Here are a few of the things I want to explore further.
 
 ## Credits
 
+- https://apt.syncthing.net/
+- https://docs.syncthing.net/users/autostart.html
+- https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl
