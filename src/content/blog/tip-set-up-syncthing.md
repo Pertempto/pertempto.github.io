@@ -15,7 +15,7 @@ I've heard about Syncthing many times, but I had never found the time to set it 
 These steps should work on any Ubuntu-based system. I hope to write a future post about my adventures with using Syncthing on my Android device. If you are using a Windows device, are you a real engineer? 😜 You can find links for other platforms (including macOS and Windows) on the [downloads page](https://syncthing.net/downloads/).
 
 ### Install Syncthing
-The `syncthing` package available by default on my system was quite outdated, but fortunately syncthing has their own apt repository.
+The `syncthing` package available by default on my system was quite outdated, but fortunately Syncthing has their own apt repository.
 
 You can find the full steps [here](https://apt.syncthing.net/), but I'll include the basics here for completeness.
 
@@ -55,7 +55,7 @@ Once you have Syncthing running, you should be able to access the web interface 
 
 You must first set up a remote device to share with, using the "Add Remote Device" button.
 
-Once you have a remote device connected, use the "Add Folder" button to set up a folder to share between the devices.
+Once you have a remote device connected, use the "Add Folder" button to set up a folder to share between the devices. Syncthing will watch the folder for any changes, and sync those automatically between the devices.
 
 ## Future Possibilities
 
