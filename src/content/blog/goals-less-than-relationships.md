@@ -6,13 +6,6 @@ heroImage: '/kittens.jpg'
 tags: "life, relationships, time"
 ---
 
-<!--toc:start-->
-- [My Background With Goals](#my-background-with-goals)
-- [The Value of Relationships](#the-value-of-relationships)
-- [Introspection](#introspection)
-- [Credits](#credits)
-<!--toc:end-->
-
 ## My Background With Goals
 
 I am a very goal-oriented person.
